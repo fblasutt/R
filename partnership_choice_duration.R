@@ -18,7 +18,9 @@ ipak(list.of.packages)
 
 
 #for reading .dta file
+
 library(haven)
+library(readstata13)
 library(mcmc)
 library(coda)
 
@@ -61,8 +63,9 @@ setwd(directory)
 ##################################################################
 ##################################################################
 
-ind <-read_dta("C:/Users/Fabio/Dropbox/JMP/empirical analysis/NSFG/88/NSFG88s2.dta")
+#ind <-read_dta("C:/Users/Fabio/Dropbox/JMP/empirical analysis/NSFG/88/NSFG88s2.dta")
 
+ind <-read.dta13("C:/Users/Fabio/Dropbox/JMP/empirical analysis/NSFG/88/NSFG88s2.dta")
 
 
 
